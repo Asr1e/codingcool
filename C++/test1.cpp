@@ -1,5 +1,16 @@
-#include <stdio.h>  
+#include <iostream>
+#include <vector>
+#include <string>
 
-int main() {
-    printf("Test");
+using namespace std;
+
+int main()
+{
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
 }
